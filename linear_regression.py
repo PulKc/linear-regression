@@ -24,7 +24,7 @@ def gradient_descent(X, y, alpha, epochs):
 
         # Optionally, you can print the cost or weights at every epoch
         cost = np.mean(error**2)  # Mean Squared Error
-        print(f'Epoch {epoch + 1}/{epochs}, Cost: {cost}, Weights: {w}')
+        # print(f'Epoch {epoch + 1}/{epochs}, Cost: {cost}, Weights: {w}')
     
     return w
 
@@ -36,7 +36,7 @@ if __name__ == "__main__":
     
     # Hyperparameters
     alpha = 0.01  # Learning rate
-    epochs = 1000  # Number of iterations
+    epochs = 1000 # Number of iterations
 
     # Run gradient descent
     final_weights = gradient_descent(X, y, alpha, epochs)
